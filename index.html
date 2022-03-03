@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
+    <link rel="stylesheet" href="public/index.css" />
+    <script src="index.js" type="module"></script>
+    <title>User Generator</title>
+  </head>
+  <body>
+    <div class="root">
+      <nav>
+        <h1>User Generator</h1>
+        <a href="/history.html">
+          <button class="primary">History</button>
+        </a>
+      </nav>
+
+      <header>
+        <button id="new-user" class="primary">Get New User</button>
+        <label>
+          <input type="checkbox" class="hide-address" />
+          Hide Address
+        </label>
+      </header>
+
+      <div class="user-card hidden">
+        <div class="header">
+          <div class="left">
+            <img class="picture" src="public/avatar.png" alt="Avatar" />
+            <span class="name">Loading...</span>
+          </div>
+          <span class="registered-at">Loading...</span>
+        </div>
+
+        <div class="location-container">
+          <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+          <span class="location">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

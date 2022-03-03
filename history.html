@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css" />
+    <link rel="stylesheet" href="public/index.css" />
+    <script src="history.js" type="module"></script>
+    <title>User Generator</title>
+  </head>
+  <body>
+    <div class="root">
+      <nav>
+        <h1>User Generator</h1>
+        <a href="/index.html">
+          <button class="primary">Home</button>
+        </a>
+      </nav>
+
+      <header>
+        Sort By
+        <select name="Sort By" id="sort" class="primary">
+          <option value="lastNameAsc">Last Name (A to Z)</option>
+          <option value="lastNameDesc">Last Name (Z to A)</option>
+          <option value="registeredAsc">
+            Registration Date (oldest first)
+          </option>
+          <option value="registeredDesc">
+            Registration Date (newest first)
+          </option>
+        </select>
+      </header>
+
+      <div class="history">
+        <template id="history-item">
+          <div class="user-card">
+            <div class="header">
+              <div class="left">
+                <img class="picture" src="public/avatar.png" alt="Avatar" />
+                <span class="name">Loading...</span>
+              </div>
+              <span class="registered-at">Loading...</span>
+            </div>
+
+            <div class="location-container">
+              <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+              <span class="location">Loading...</span>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </body>
+</html>
