@@ -1,5 +1,8 @@
 # Random User Generator
 
+![Home Screen](screenshot-home.png)
+![History Screen](screenshot-history.png)
+
 Simple web app for displaying data about random users. The app saves a history of the last 10 generated users and lets you browse through it via the 'History' tab. The history can be sorted by last name or registration date.
 
 ## Running
